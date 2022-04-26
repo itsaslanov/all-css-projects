@@ -1,0 +1,76 @@
+@use "sass:math";
+
+$browser-context: 16;
+
+@function rem($pixels, $context: $browser-context) {
+  @return (math.div($pixels, $context)) * 1rem;
+}
+
+// Breakpoints
+@mixin laptop {
+  @media (max-width: rem(968)) { @content; }
+}
+
+// VARIABLES
+:root {
+    
+    --hue: 207;
+    --sat: 90%;
+    --lig: 61%;
+
+    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+    --title-color: hsl(var(--hue), 12%, 15%);
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+    // FONT and TYPOGRAPHY
+    --body-font: 'Poppins', sans-serif;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .814rem;
+    --smaller-font-size: .75rem;
+    @include laptop {
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

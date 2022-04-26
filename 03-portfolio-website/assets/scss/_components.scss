@@ -1,0 +1,36 @@
+@use "./base" as *;
+
+// <========== BUTTONS =============>
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1.15rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  box-shadow: 0 rem(8) rem(24) hsl(var(--hue), var(--sat), var(--lig), 0.25);
+
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
+
+  i {
+    font-size: 1.25rem;
+  }
+}
+
+.button__small {
+  padding: 0.75rem;
+  box-shadow: none;
+}
+
+.button__gray {
+  background-color: var(--text-color-lighten);
+  color: var(--title-color);
+
+  &:hover {
+    background-color: var(--text-color-light);
+  }
+}
