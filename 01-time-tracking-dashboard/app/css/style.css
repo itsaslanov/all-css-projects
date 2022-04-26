@@ -1,0 +1,253 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    /* ========= Primary colors  ========== */
+    --background-color: hsl(226, 43%, 10%);
+    --card-color: hsl(235, 46%, 20%);
+    --text-color: hsl(236, 100%, 87%);
+    --hover-over-color: #34397B;
+    /* ========= Cards' colors  ========== */
+    --blue: hsl(246, 80%, 60%);
+    --light-orange: hsl(15, 100%, 70%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+    /* ========= Typography ========== */
+    --ft-family: 'Rubik', sans-serif;
+    --fs-18: 1.8rem;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    /* ========= Border radiusing ========== */
+    --br-radius: 2rem;
+    --br-radius-bm: 3rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: var(--ft-family);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-300);
+    color: #fff;
+    background-color: var(--background-color);
+}
+
+.wrapper {
+    max-width: 75em;
+    margin: 6em auto;
+}
+
+.container {
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.user-card {
+    grid-row: 1 / 3;
+    background-color: var(--card-color);
+    border-radius: var(--br-radius);
+}
+
+.user-card__header {
+    background-color: var(--blue);
+    padding: 2.3em;
+    padding-bottom: 5em;
+    border-radius: var(--br-radius);
+}
+
+.user-card__header .user-card__img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0.3rem solid #fff;
+    margin-bottom: 3.5rem;
+}
+
+.user-card .user-card__report {
+    display: block;
+    opacity: 0.5;
+    font-weight: var(--fw-400);
+}
+
+.user-card .user-card__full-name {
+    font-size: 5rem;
+}
+
+.user-card__footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 2em;
+}
+
+.user-card__footer ul li a:link,
+.user-card__footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.user-card__footer .weekly {
+    opacity: 1;
+}
+
+.card--light-orange {
+    background-color: var(--light-orange);
+    background-image: url('../../images/icon-work.svg');
+}
+
+.card--soft-blue {
+    background-color: var(--soft-blue);
+    background-image: url('../../images/icon-play.svg');
+}
+
+.card--light-red {
+    background-color: var(--light-red);
+    background-image: url('../../images/icon-study.svg');
+}
+
+.card--lime-green {
+    background-color: var(--lime-green);
+    background-image: url('../../images/icon-exercise.svg');
+}
+
+.card--violet {
+    background-color: var(--violet);
+    background-image: url('../../images/icon-social.svg');
+}
+
+.card--soft-orange {
+    background-color: var(--soft-orange);
+    background-image: url('../../images/icon-self-care.svg');
+}
+
+.card {
+    border-radius: var(--br-radius);
+    border-bottom-left-radius: var(--br-radius-bm);
+    border-bottom-right-radius: var(--br-radius-bm);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 3.2em;
+}
+
+.card .card__content {
+    background-color: var(--card-color);
+    border-radius: var(--br-radius);
+    padding: 2em;
+}
+
+.card:hover .card__content {
+    background-color: var(--hover-over-color);
+    cursor: pointer;
+}
+
+.card__content .card__sub-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.card__sub-title .card__svg {
+    background-image: url('/images/icon-ellipsis.svg');
+    width: 1.375em;
+    height: 0.313em;
+    justify-self: center;
+    align-self: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.card__sub-title .card__sub-text {
+    font-weight: var(--fw-500);
+}
+
+.card__active_hours {
+    display: block;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.card__weekly_hours {
+    opacity: 0.5;
+}
+
+.attribution {
+    text-align: center;
+    margin: 0 2rem;
+    margin-bottom: 4rem;
+    gap: 0.5rem;
+    opacity: 0.7;
+}
+
+.attribution a {
+    color: #fff;
+}
+
+/* ========= Mobile 992px  ========== */
+@media only screen and (max-width: 62em){
+    .wrapper {
+        margin: 4em auto;
+    }
+}
+
+/* ========= Mobile 375px  ========== */
+
+@media only screen and (max-width: 36em) {
+    .user-card__header {
+        padding-bottom: 0;
+        padding: 2em;
+    }
+    .user-card__header {
+        display: flex;
+        gap: 2rem;
+    }
+    .user-card__footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .user-card__header .user-card__img img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0;
+    }
+    .user-card__user {
+        align-self: center;
+    }
+    .user-card .user-card__full-name {
+        font-size: 2.2rem;
+    }
+    .card__content .card__sub-title {
+        margin-bottom: 0.6rem;
+    }
+    .card__hours {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card__active_hours {
+        font-size: 3rem;
+        margin: 0;
+    }
+    .card__weekly_hours {
+        align-self: center;
+    }
+}

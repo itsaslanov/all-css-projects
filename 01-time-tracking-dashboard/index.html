@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="user-card">
+                <div class="user-card__header">
+                    <div class="user-card__img">
+                        <img src="images/image-jeremy.png" alt="" />
+                    </div>
+
+                    <div class="user-card__user">
+                        <span class="user-card__report">
+                            Report for
+                        </span>
+
+                        <span class="user-card__full-name">
+                            Jeremy Robson
+                        </span>
+                    </div>
+                </div>
+                <div class="user-card__footer">
+                    <ul>
+                        <li><a data-filter="daily" class="btn daily">Daily</a></li>
+                        <li><a data-filter="weekly" class="btn weekly">Weekly</a></li>
+                        <li><a data-filter="monthly" class="btn monthly">Monthly</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card--light-orange">
+                <div class="card__content">
+                    <div class="card__sub-title">
+                        <span class="card__sub-text">
+                            Work
+                        </span>
+                        <!-- svg -->
+                        <div class="card__svg"></div>
+                    </div>
+
+                    <div class="card__hours">
+                        <!-- active hours -->
+                        <span class="card__active_hours">
+                            32hrs
+                        </span>
+                        <!-- weekly hours -->
+                        <span class="card__weekly_hours">
+                            Last Week - 36hrs
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--soft-blue">
+                <div class="card__content">
+                    <div class="card__sub-title">
+                        <span class="card__sub-text">
+                            Play
+                        </span>
+                        <!-- svg -->
+                        <div class="card__svg"></div>
+                    </div>
+                    <div class="card__hours">
+                        <!-- active hours -->
+                        <span class="card__active_hours">
+                            10hrs
+                        </span>
+                        <!-- weekly hours -->
+                        <span class="card__weekly_hours">
+                            Last Week - 8hrs
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--light-red">
+                <div class="card__content">
+                    <div class="card__sub-title">
+                        <span class="card__sub-text">
+                            Study
+                        </span>
+                        <!-- svg -->
+                        <div class="card__svg"></div>
+                    </div>
+                    <div class="card__hours">
+                        <!-- active hours -->
+                        <span class="card__active_hours">
+                            4hrs
+                        </span>
+                        <!-- weekly hours -->
+                        <span class="card__weekly_hours">
+                            Last Week - 7hrs
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--lime-green">
+                <div class="card__content">
+                    <div class="card__sub-title">
+                        <span class="card__sub-text">
+                            Exercise
+                        </span>
+                        <!-- svg -->
+                        <div class="card__svg"></div>
+                    </div>
+                    <div class="card__hours">
+                        <!-- active hours -->
+                        <span class="card__active_hours">
+                            4hrs
+                        </span>
+                        <!-- weekly hours -->
+                        <span class="card__weekly_hours">
+                            Last Week - 5hrs
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--violet">
+                <div class="card__content">
+                    <div class="card__sub-title">
+                        <span class="card__sub-text">
+                            Social
+                        </span>
+                        <!-- svg -->
+                        <div class="card__svg"></div>
+                    </div>
+                    <div class="card__hours">
+                        <!-- active hours -->
+                        <span class="card__active_hours">
+                            5hrs
+                        </span>
+                        <!-- weekly hours -->
+                        <span class="card__weekly_hours">
+                            Last Week - 10hrs
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card--soft-orange">
+                <div class="card__content">
+                    <div class="card__sub-title">
+                        <span class="card__sub-text">
+                            Self Care
+                        </span>
+                        <!-- svg -->
+                        <div class="card__svg"></div>
+                    </div>
+                    <div class="card__hours">
+                        <!-- active hours -->
+                        <span class="card__active_hours">
+                            2hrs
+                        </span>
+                        <!-- weekly hours -->
+                        <span class="card__weekly_hours">
+                            Last Week - 2hrs
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw"
+                target="_blank">Frontend Mentor</a>, coded by
+            <a href="https://www.frontendmentor.io/profile/itsaslanov" target="_blank">Aslanov</a>
+        </div>
+    </div>
+
+    <script src="app/js/app.js"></script>
+</body>
+
+</html>
