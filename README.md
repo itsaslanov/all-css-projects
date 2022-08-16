@@ -6,5 +6,6 @@ You can see all projects in action here
 2. Testimonials
 3. Sunnyside Agency Landing Page
 4. Easybank Landing Page
+5. NFT Review Card
 
 
