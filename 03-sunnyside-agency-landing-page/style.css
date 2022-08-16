@@ -707,3 +707,20 @@ footer {
   .client-text { margin-bottom: 70px; }
 
 }
+
+.desc {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: blanchedalmond;
+}
+
+.desc,
+.desc * {
+  color: #333;
+  font-weight: normal;
+}
+
+.desc a {
+  text-decoration:underline;
+}
